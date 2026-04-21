@@ -1,0 +1,5 @@
+# helloworld.txt
+# Toki Pona Language - Hello World Program
+# "toki" means speak/print
+
+toki "Hello, World!"

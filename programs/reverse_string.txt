@@ -1,0 +1,24 @@
+# reverse_string.txt
+# Toki Pona Language - Reverse a String
+#
+# Keywords used:
+#   kute   = input
+#   nimi   = declare variable
+#   sin    = while loop
+#   weka   = subtract (-)
+#   suli   = greater than (>)
+#   en     = + (string concat)
+#   toki   = print
+#   pini   = end block
+
+kute word "Enter a word to reverse: "
+nimi reversed = ""
+nimi index = len(word) weka 1
+
+sin index suli -1
+    nimi ch = word[index]
+    reversed = reversed en ch
+    index = index weka 1
+pini
+
+toki reversed

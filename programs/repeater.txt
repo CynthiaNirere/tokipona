@@ -1,0 +1,15 @@
+# repeater.txt
+# Toki Pona Language - Repeat a Character N Times
+# "kute"  = input
+# "nimi"  = declare variable
+# "musi"  = for loop (repeat)
+# "en"    = + (add / concat)
+# "toki"  = print
+
+kute ch "Enter a character to repeat: "
+kute n "How many times? "
+nimi result = ""
+musi i = 0 lili n
+    result = result en ch
+pini
+toki result

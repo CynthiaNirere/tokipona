@@ -1,0 +1,11 @@
+# multiply.txt
+# Toki Pona Language - Multiply Two Numbers
+# "kute"  = input
+# "nimi"  = declare variable
+# "mute"  = multiply (*)
+# "toki"  = print
+
+kute a "Enter first number: "
+kute b "Enter second number: "
+nimi result = a mute b
+toki result
