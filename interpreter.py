@@ -66,7 +66,6 @@ def tokenize(line):
 stack = []  
 
 def push(value):
-    """Push a value onto the top of the stack."""
     stack.append(value)
 
 
@@ -92,7 +91,7 @@ def clear_stack():
 
 
 def op_en():
-    """en -> add or concat: pop two, push result."""
+    #en:  adding
     b = pop()
     a = pop()
     if isinstance(a, str) or isinstance(b, str):
@@ -102,21 +101,21 @@ def op_en():
 
 
 def op_weka():
-    """weka -> subtract: pop two, push a - b."""
+    #weka: subtract
     b = pop()
     a = pop()
     push(a - b)
 
 
 def op_mute():
-    """mute -> multiply: pop two, push a * b."""
+    #mute: multiply
     b = pop()
     a = pop()
     push(a * b)
 
 
 def op_kipisi():
-    """kipisi -> divide: pop two, push a / b."""
+    #kipisi: divide
     b = pop()
     a = pop()
     if b == 0:
@@ -127,42 +126,42 @@ def op_kipisi():
 
 
 def op_modulo():
-    """% -> remainder: pop two, push a % b."""
+    #%: remainder
     b = pop()
     a = pop()
     push(a % b)
 
 
 def op_seme():
-    """seme -> equals: pop two, push True if a == b."""
+    #seme: equals
     b = pop()
     a = pop()
     push(a == b)
 
 
 def op_ala():
-    """ala -> not equal: pop two, push True if a != b."""
+    #ala: not equal
     b = pop()
     a = pop()
     push(a != b)
 
 
 def op_lili():
-    """lili -> less than: pop two, push True if a < b."""
+   # lili: less than
     b = pop()
     a = pop()
     push(a < b)
 
 
 def op_suli():
-    """suli -> greater than: pop two, push True if a > b."""
+   # suli: greater than
     b = pop()
     a = pop()
     push(a > b)
 
 
 def try_number(value):
-    """Try to convert a string to int or float. Returns original if it can't."""
+   #Try to convert a string to int or float. Returns original if it can't
     try:
         if '.' in str(value):
             return float(value)
@@ -230,7 +229,6 @@ def collect_if_block(lines, start_i):
         i += 1
 
     return if_body, else_body, i
-
 
 #  THE RUNNER, executes
 

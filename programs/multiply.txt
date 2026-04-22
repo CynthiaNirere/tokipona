@@ -1,11 +1,5 @@
 # multiply.txt
 # Push both numbers onto the stack, then mute multiplies them.
-#
-# Stack trace:
-#   kute a  -> stack: [3]
-#   kute b  -> stack: [3, 4]
-#   mute    -> stack: [12]
-#   toki    -> prints 12, stack: []
 
 kute a "Enter first number: "
 kute b "Enter second number: "

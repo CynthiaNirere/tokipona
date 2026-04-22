@@ -1,10 +1,5 @@
 # reverse_string.txt
 # Toki Pona Stack-Based - Reverse a String
-#
-# Stack trace for word = "hi" (length 2, last index 1):
-#   idx=1: push reversed="", push word[1]='i', en -> "i", store reversed
-#   idx=0: push reversed="i", push word[0]='h', en -> "ih", store reversed
-#   Result: "ih"  ✓
 
 kute word "Enter a word to reverse: "
 pana ""

@@ -1,13 +1,8 @@
 # is_even.txt
 # Stack-based even/odd check
 #
-# Stack trace:
-#   kute num      -> stack: [8]
-#   pana 2        -> stack: [8, 2]
-#   %             -> stack: [0]      (8 % 2 = 0)
-#   pana 0        -> stack: [0, 0]
-#   seme          -> stack: [True]
-#   ante          -> pops True, runs if-body
+
+
 
 kute num "Enter an integer: "
 pana 2

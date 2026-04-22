@@ -7,7 +7,6 @@ import os
 from interpreter import tokenize, run_lines, clear_stack
 
 def run_file(filepath):
-    """Load a Toki Pona source file and run it."""
     if not os.path.exists(filepath):
         print(f"Error: File '{filepath}' not found.")
         sys.exit(1)
@@ -15,9 +14,9 @@ def run_file(filepath):
     with open(filepath, 'r') as f:
         lines = f.read().splitlines()
 
-    clear_stack()       # start with a clean stack every run
-    variables = {}      # global variable storage
-    functions = {}      # user-defined function storage
+    clear_stack()      
+    variables = {}      
+    functions = {}      
 
     run_lines(lines, variables, functions)
 

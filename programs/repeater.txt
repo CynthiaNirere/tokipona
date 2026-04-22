@@ -1,11 +1,5 @@
 # repeater.txt
 # Repeat a character N times using a for loop.
-#
-# Stack trace each loop step:
-#   kama result  -> push current result string
-#   kama ch      -> push the character
-#   en           -> concat them, push new string
-#   nimi result  -> pop and store back
 
 kute ch "Enter a character to repeat: "
 kute n  "How many times? "
