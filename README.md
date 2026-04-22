@@ -3,13 +3,13 @@ A programming language based on Toki Pona, interpreted with Python.
 
 
 ## How to Run
-python3 main.py programs/helloworld.txt
+`python3 main.py programs/helloworld.txt`
 
 ## Project Structure
 
 tokipona/
-main.py
-interpreter.py
+main.py\
+interpreter.py\
  programs/\
     ├── helloworld.txt\
     ├── cat.txt\
@@ -17,7 +17,7 @@ interpreter.py
     ├── repeater.txt\
     ├── reverse_string.txt\
     ├── is_palindrome.txt\
-    └── is_even.txt\
+    └── is_even.txt
 
 
 `main.py` is the entry point. `interpreter.py` holds everything — the tokenizer, stack, and runner.
