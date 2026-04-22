@@ -7,7 +7,7 @@ A programming language based on Toki Pona, interpreted with Python.
 
 ## Project Structure
 
-tokipona/
+tokipona/\
 main.py\
 interpreter.py\
  programs/\
