@@ -8,16 +8,16 @@ python3 main.py programs/helloworld.txt
 ## Project Structure
 
 tokipona/
-├── main.py
-├── interpreter.py
-└── programs/
-    ├── helloworld.txt
-    ├── cat.txt
-    ├── multiply.txt
-    ├── repeater.txt
-    ├── reverse_string.txt
-    ├── is_palindrome.txt
-    └── is_even.txt
+main.py
+interpreter.py
+ programs/
+ helloworld.txt
+cat.txt
+ multiply.txt
+ repeater.txt
+ reverse_string.txt
+is_palindrome.txt
+ is_even.txt
 
 
 `main.py` is the entry point. `interpreter.py` holds everything — the tokenizer, stack, and runner.
@@ -35,7 +35,7 @@ toki       print         stack: []     prints: 12
 
 ## Keywords
 
-*Input and Output
+Input and Output
 
 `toki` — pop the top of the stack and print it
 
@@ -49,7 +49,7 @@ toki       print         stack: []     prints: 12
 
 `nimi name` — pop the top and store it in a variable
 
-*Math
+Math
 
 `en` — pop two values, push their sum (also works for joining strings)
 
@@ -61,7 +61,7 @@ toki       print         stack: []     prints: 12
 
 `%` — pop two values, push the remainder
 
-*Comparisons
+Comparisons
 
 `seme` — pop two values, push True if they are equal
 
@@ -71,7 +71,7 @@ toki       print         stack: []     prints: 12
 
 `suli` — pop two values, push True if the first is greater than the second
 
-*String Operations
+String Operations
 
 `len` — pop a string, push its length
 
@@ -89,7 +89,7 @@ toki       print         stack: []     prints: 12
 
 `pini` — ends any block (ante, sin, musi, or awen)
 
-*Functions
+Functions
 
 `awen name` — define a function, ended with `pini`
 
