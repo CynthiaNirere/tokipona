@@ -127,4 +127,4 @@ pini
 ```
 
 ## Requirements
-Python 3.7 or higher. No extra libraries needed.
+Python 3 or higher. No extra libraries needed.
