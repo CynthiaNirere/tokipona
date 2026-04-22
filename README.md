@@ -77,7 +77,7 @@ String Operations
 
 `index` — pop an index and a string, push the character at that position
 
-*Control Flow
+Control Flow
 
 `ante` — if statement. Pops the top; if True runs the block, otherwise runs the `sama` block
 
@@ -95,7 +95,7 @@ Functions
 
 To call a function just write its name on its own line.
 
-*Booleans
+Booleans
 
 `lon` means True, `ike` means False.
 
