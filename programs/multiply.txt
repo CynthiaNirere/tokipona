@@ -1,11 +1,13 @@
 # multiply.txt
-# Toki Pona Language - Multiply Two Numbers
-# "kute"  = input
-# "nimi"  = declare variable
-# "mute"  = multiply (*)
-# "toki"  = print
+# Push both numbers onto the stack, then mute multiplies them.
+#
+# Stack trace:
+#   kute a  -> stack: [3]
+#   kute b  -> stack: [3, 4]
+#   mute    -> stack: [12]
+#   toki    -> prints 12, stack: []
 
 kute a "Enter first number: "
 kute b "Enter second number: "
-nimi result = a mute b
-toki result
+mute
+toki

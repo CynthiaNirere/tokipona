@@ -1,5 +1,6 @@
 # helloworld.txt
-# Toki Pona Language - Hello World Program
-# "toki" means speak/print
-
-toki "Hello, World!"
+# Stack: push the string, then toki pops and prints it
+ 
+pana "Hello, World!"
+toki
+ 

@@ -1,20 +1,23 @@
 # is_even.txt
-# Toki Pona Language - Check if a Number is Even or Odd
+# Stack-based even/odd check
 #
-# Keywords used:
-#   kute   = input
-#   nimi   = declare variable
-#   ante   = if
-#   sama   = else
-#   seme   = == (equals)
-#   toki   = print
-#   pini   = end block
+# Stack trace:
+#   kute num      -> stack: [8]
+#   pana 2        -> stack: [8, 2]
+#   %             -> stack: [0]      (8 % 2 = 0)
+#   pana 0        -> stack: [0, 0]
+#   seme          -> stack: [True]
+#   ante          -> pops True, runs if-body
 
 kute num "Enter an integer: "
-nimi remainder = num % 2
-
-ante remainder seme 0
-    toki "lon - the number is even!"
+pana 2
+%
+pana 0
+seme
+ante
+    pana "lon - the number is even!"
+    toki
 sama
-    toki "ike - the number is odd."
+    pana "ike - the number is odd."
+    toki
 pini

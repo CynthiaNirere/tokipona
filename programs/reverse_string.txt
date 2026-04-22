@@ -1,24 +1,47 @@
 # reverse_string.txt
-# Toki Pona Language - Reverse a String
+# Toki Pona Stack-Based - Reverse a String
 #
-# Keywords used:
-#   kute   = input
-#   nimi   = declare variable
-#   sin    = while loop
-#   weka   = subtract (-)
-#   suli   = greater than (>)
-#   en     = + (string concat)
-#   toki   = print
-#   pini   = end block
+# Stack trace for word = "hi" (length 2, last index 1):
+#   idx=1: push reversed="", push word[1]='i', en -> "i", store reversed
+#   idx=0: push reversed="i", push word[0]='h', en -> "ih", store reversed
+#   Result: "ih"  ✓
 
 kute word "Enter a word to reverse: "
-nimi reversed = ""
-nimi index = len(word) weka 1
+pana ""
+nimi reversed
 
-sin index suli -1
-    nimi ch = word[index]
-    reversed = reversed en ch
-    index = index weka 1
+# last index = len(word) - 1
+kama word
+len
+pana 1
+weka
+nimi idx
+
+# push starting condition: idx > -1
+kama idx
+pana -1
+suli
+
+sin
+    # push reversed first, then char, then concat
+    kama reversed
+    kama word
+    kama idx
+    index
+    en
+    nimi reversed
+
+    # decrement idx
+    kama idx
+    pana 1
+    weka
+    nimi idx
+
+    # push new loop condition
+    kama idx
+    pana -1
+    suli
 pini
 
-toki reversed
+kama reversed
+toki

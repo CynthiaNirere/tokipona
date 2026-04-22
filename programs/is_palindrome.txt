@@ -1,33 +1,47 @@
 # is_palindrome.txt
-# Toki Pona Language - Check if a Word is a Palindrome
+# Toki Pona Stack-Based - Check if a Word is a Palindrome
 #
-# Strategy: Reverse the word, then compare to original.
-#
-# Keywords used:
-#   kute   = input
-#   nimi   = declare variable
-#   sin    = while loop
-#   ante   = if
-#   sama   = else
-#   seme   = == (equals)
-#   weka   = - (subtract)
-#   suli   = > (greater than)
-#   en     = + (string concat)
-#   toki   = print
-#   pini   = end block
+# Reverse the word then compare to original.
 
 kute word "Enter a word: "
-nimi reversed = ""
-nimi index = len(word) weka 1
+pana ""
+nimi reversed
 
-sin index suli -1
-    nimi ch = word[index]
-    reversed = reversed en ch
-    index = index weka 1
+kama word
+len
+pana 1
+weka
+nimi idx
+
+kama idx
+pana -1
+suli
+
+sin
+    kama reversed
+    kama word
+    kama idx
+    index
+    en
+    nimi reversed
+
+    kama idx
+    pana 1
+    weka
+    nimi idx
+
+    kama idx
+    pana -1
+    suli
 pini
 
-ante word seme reversed
-    toki "lon - it is a palindrome!"
+kama word
+kama reversed
+seme
+ante
+    pana " It is a palindrome!"
+    toki
 sama
-    toki "ike - it is not a palindrome."
+    pana " It is not a palindrome."
+    toki
 pini

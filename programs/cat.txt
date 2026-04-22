@@ -1,8 +1,7 @@
 # cat.txt
-# Toki Pona Language - Cat Program
-# Reads a line from the user and prints it back.
-# "kute" means listen/input
-# "toki" means speak/print
+# Read a line from the user, then print it back.
+# kute pushes the input onto the stack AND stores it.
+# toki pops it and prints it.
 
 kute line "Enter text: "
-toki line
+toki
